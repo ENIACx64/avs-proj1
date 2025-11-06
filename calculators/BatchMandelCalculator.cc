@@ -1,8 +1,8 @@
 /**
  * @file BatchMandelCalculator.cc
- * @author FULL NAME <xlogin00@stud.fit.vutbr.cz>
+ * @author Jindrich Vodak <xvodak06@stud.fit.vutbr.cz>
  * @brief Implementation of Mandelbrot calculator that uses SIMD paralelization over small batches
- * @date DATE
+ * @date 06/11/2025
  */
 
 #include <iostream>

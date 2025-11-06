@@ -10,6 +10,7 @@
 #include <algorithm>
 
 #include <stdlib.h>
+#include <cstring>
 #include <mm_malloc.h>
 
 
