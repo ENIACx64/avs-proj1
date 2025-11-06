@@ -1,0 +1,193 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 18, 
+                   Column: 0 }
+Function:        _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+Args:
+  - NumStackBytes:   '40'
+  - String:          ' stack bytes in function '''
+  - Function:        _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '45'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 18, 
+                   Column: 0 }
+Function:        _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+Args:
+  - NumInstructions: '45'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 24, 
+                   Column: 0 }
+Function:        _ZN20BaseMandelCalculator4infoERSob
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 24, 
+                   Column: 0 }
+Function:        _ZN20BaseMandelCalculator4infoERSob
+Args:
+  - NumStackBytes:   '40'
+  - String:          ' stack bytes in function '''
+  - Function:        _ZN20BaseMandelCalculator4infoERSob
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20BaseMandelCalculator4infoERSob
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '12'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20BaseMandelCalculator4infoERSob
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '40'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 34, 
+                   Column: 9 }
+Function:        _ZN20BaseMandelCalculator4infoERSob
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '57'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 40, 
+                   Column: 1 }
+Function:        _ZN20BaseMandelCalculator4infoERSob
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 24, 
+                   Column: 0 }
+Function:        _ZN20BaseMandelCalculator4infoERSob
+Args:
+  - NumInstructions: '112'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        __cxx_global_var_init
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function '''
+  - Function:        __cxx_global_var_init
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        __cxx_global_var_init
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        __cxx_global_var_init
+Args:
+  - NumInstructions: '10'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _GLOBAL__sub_I_BaseMandelCalculator.cc
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function '''
+  - Function:        _GLOBAL__sub_I_BaseMandelCalculator.cc
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _GLOBAL__sub_I_BaseMandelCalculator.cc
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _GLOBAL__sub_I_BaseMandelCalculator.cc
+Args:
+  - NumInstructions: '5'
+  - String:          ' instructions in function'
+...

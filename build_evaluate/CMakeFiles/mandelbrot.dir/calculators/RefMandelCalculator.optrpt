@@ -1,0 +1,67 @@
+Global optimization report for : _ZN19RefMandelCalculatorC2Ejj
+=================================================================
+
+Global optimization report for : _ZN19RefMandelCalculatorD2Ev
+=================================================================
+
+Global optimization report for : _ZN20BaseMandelCalculatorD2Ev
+=================================================================
+
+Global optimization report for : _ZN19RefMandelCalculator19calculateMandelbrotEv
+
+LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (51, 5)
+
+    LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (54, 9)
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : _ZL10mandelbrotIfEiT_S0_i
+
+LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (32, 5)
+LOOP END
+=================================================================
+
+Global optimization report for : __cxx_global_var_init
+=================================================================
+
+Global optimization report for : _GLOBAL__sub_I_RefMandelCalculator.cc
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: _ZN19RefMandelCalculatorC2Ejj
+   -> EXTERN: _ZNSaIcEC1Ev /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (15,129)
+   -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_ /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (15,129)
+   -> EXTERN: _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (15,85)
+   -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (15,85)
+   -> EXTERN: _ZNSaIcED1Ev /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (15,85)
+   -> EXTERN: malloc /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (17,20)
+   -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (15,85)
+   -> EXTERN: _ZNSaIcED1Ev /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (15,85)
+
+COMPILE FUNC: _ZN19RefMandelCalculatorD2Ev
+   -> EXTERN: free /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (22,5)
+   -> _ZN20BaseMandelCalculatorD2Ev /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (24,1)
+
+COMPILE FUNC: _ZN20BaseMandelCalculatorD2Ev
+   -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (20,7)
+
+COMPILE FUNC: _ZN19RefMandelCalculator19calculateMandelbrotEv
+   -> _ZL10mandelbrotIfEiT_S0_i /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (59,25)
+
+COMPILE FUNC: _ZL10mandelbrotIfEiT_S0_i
+
+COMPILE FUNC: __cxx_global_var_init
+   -> EXTERN: _ZNSt8ios_base4InitC1Ev /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc (74,25)
+   -> EXTERN: __cxa_atexit /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc
+
+COMPILE FUNC: _GLOBAL__sub_I_RefMandelCalculator.cc
+   -> __cxx_global_var_init /home/xvodak06/avs-proj1/calculators/RefMandelCalculator.cc
+
+---- End Inlining Report ------

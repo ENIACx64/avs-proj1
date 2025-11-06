@@ -1,0 +1,58 @@
+Global optimization report for : _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+=================================================================
+
+Global optimization report for : _ZN20BaseMandelCalculator4infoERSob
+=================================================================
+
+Global optimization report for : __cxx_global_var_init
+=================================================================
+
+Global optimization report for : _GLOBAL__sub_I_BaseMandelCalculator.cc
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+   -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_ /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (16,134)
+
+COMPILE FUNC: _ZN20BaseMandelCalculator4infoERSob
+   -> EXTERN: _ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKNSt7__cxx1112basic_stringIS4_S5_T1_EE /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (27,14)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (27,23)
+   -> EXTERN: _ZNSolsEi /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (28,14)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (28,27)
+   -> EXTERN: _ZNSolsEi /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (29,14)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (29,23)
+   -> EXTERN: _ZNSolsEi /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (29,30)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (29,40)
+   -> EXTERN: _ZNSolsEi /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (30,14)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (30,23)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (34,14)
+   -> EXTERN: _ZNSolsEPFRSoS_E /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (34,98)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (35,14)
+   -> EXTERN: _ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKNSt7__cxx1112basic_stringIS4_S5_T1_EE /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (35,39)
+   -> EXTERN: _ZNSolsEPFRSoS_E /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (35,48)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (36,14)
+   -> EXTERN: _ZNSolsEi /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (36,39)
+   -> EXTERN: _ZNSolsEPFRSoS_E /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (36,52)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (37,14)
+   -> EXTERN: _ZNSolsEi /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (37,39)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (37,48)
+   -> EXTERN: _ZNSolsEi /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (37,55)
+   -> EXTERN: _ZNSolsEPFRSoS_E /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (37,65)
+   -> EXTERN: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (38,14)
+   -> EXTERN: _ZNSolsEi /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (38,39)
+   -> EXTERN: _ZNSolsEPFRSoS_E /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (38,48)
+
+COMPILE FUNC: __cxx_global_var_init
+   -> EXTERN: _ZNSt8ios_base4InitC1Ev /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc (74,25)
+   -> EXTERN: __cxa_atexit /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc
+
+COMPILE FUNC: _GLOBAL__sub_I_BaseMandelCalculator.cc
+   -> __cxx_global_var_init /home/xvodak06/avs-proj1/calculators/BaseMandelCalculator.cc
+
+---- End Inlining Report ------

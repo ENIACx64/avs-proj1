@@ -1,0 +1,1776 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 24, 
+                   Column: 20 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          ''''
+  - Callee:          _ZL10_mm_mallocmm
+  - String:          ''' inlined into '''
+  - Caller:          _ZN20LineMandelCalculatorC2Ejj
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 22, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _ZN20LineMandelCalculatorC2Ejj
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '20'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 29, 
+                   Column: 5 }
+Function:        _ZN20LineMandelCalculatorD2Ev
+Args:
+  - String:          ''''
+  - Callee:          _ZL8_mm_freePv
+  - String:          ''' inlined into '''
+  - Caller:          _ZN20LineMandelCalculatorD2Ev
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 28, 
+                       Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          _ZN20LineMandelCalculatorD2Ev
+  - String:          ':'
+  - Line:            '1'
+  - String:          ':'
+  - Column:          '5'
+  - String:          ';'
+...
+--- !Passed
+Pass:            VPlan Vectorization
+Name:            Vectorized
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 34, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - Remark:          Loop was 8-way vectorized
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 21, 
+                   Column: 49 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          FastISel missed terminator
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 26, 
+                   Column: 1 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          FastISel missed
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 21, 
+                   Column: 5 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          FastISel missed terminator
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 26, 
+                   Column: 1 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          FastISel missed
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 22, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - NumStackBytes:   '152'
+  - String:          ' stack bytes in function '''
+  - Function:        _ZN20LineMandelCalculatorC2Ejj
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 21, 
+                   Column: 5 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 21, 
+                   Column: 5 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '15'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 24, 
+                   Column: 20 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 24, 
+                   Column: 20 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 24, 
+                   Column: 20 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 24, 
+                   Column: 20 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 24, 
+                   Column: 20 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 24, 
+                   Column: 20 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 24, 
+                   Column: 20 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 24, 
+                   Column: 20 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 21, 
+                   Column: 5 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 21, 
+                   Column: 5 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 22, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculatorC2Ejj
+Args:
+  - NumInstructions: '91'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.h', Line: 20, 
+                   Column: 0 }
+Function:        _ZN20BaseMandelCalculatorD2Ev
+Args:
+  - NumStackBytes:   '24'
+  - String:          ' stack bytes in function '''
+  - Function:        _ZN20BaseMandelCalculatorD2Ev
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20BaseMandelCalculatorD2Ev
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/BaseMandelCalculator.h', Line: 20, 
+                   Column: 0 }
+Function:        _ZN20BaseMandelCalculatorD2Ev
+Args:
+  - NumInstructions: '10'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 28, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculatorD2Ev
+Args:
+  - NumStackBytes:   '40'
+  - String:          ' stack bytes in function '''
+  - Function:        _ZN20LineMandelCalculatorD2Ev
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculatorD2Ev
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculatorD2Ev
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 28, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculatorD2Ev
+Args:
+  - NumInstructions: '16'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+Function:        __clang_call_terminate
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function '''
+  - Function:        __clang_call_terminate
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        __clang_call_terminate
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+Function:        __clang_call_terminate
+Args:
+  - NumInstructions: '4'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 35, 
+                   Column: 10 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed terminator
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
+                   Column: 18 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed terminator
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
+                   Column: 33 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+  - String:          ' (in function: _ZN20LineMandelCalculator19calculateMandelbrotEv)'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+  - String:          ' (in function: _ZN20LineMandelCalculator19calculateMandelbrotEv)'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+  - String:          ' (in function: _ZN20LineMandelCalculator19calculateMandelbrotEv)'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed terminator
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 56, 
+                   Column: 17 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+  - String:          ' (in function: _ZN20LineMandelCalculator19calculateMandelbrotEv)'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+  - String:          ' (in function: _ZN20LineMandelCalculator19calculateMandelbrotEv)'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
+                   Column: 61 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 66, 
+                   Column: 13 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 65, 
+                   Column: 24 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
+                   Column: 29 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 66, 
+                   Column: 13 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
+                   Column: 40 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed call
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
+                   Column: 40 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+  - String:          ' (in function: _ZN20LineMandelCalculator19calculateMandelbrotEv)'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+  - String:          ' (in function: _ZN20LineMandelCalculator19calculateMandelbrotEv)'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          FastISel missed
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 34, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - NumStackBytes:   '1272'
+  - String:          ' stack bytes in function '''
+  - Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '18'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '24'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '17'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '33'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '26'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '13'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 66, 
+                   Column: 13 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '13'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 67, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 60, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 67, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 67, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '26'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 67, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 67, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 9 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 5 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 35, 
+                   Column: 38 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 70, 
+                   Column: 14 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 70, 
+                   Column: 38 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 34, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - NumInstructions: '458'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        __cxx_global_var_init
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function '''
+  - Function:        __cxx_global_var_init
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        __cxx_global_var_init
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        __cxx_global_var_init
+Args:
+  - NumInstructions: '10'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _GLOBAL__sub_I_LineMandelCalculator.cc
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function '''
+  - Function:        _GLOBAL__sub_I_LineMandelCalculator.cc
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        _GLOBAL__sub_I_LineMandelCalculator.cc
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _GLOBAL__sub_I_LineMandelCalculator.cc
+Args:
+  - NumInstructions: '5'
+  - String:          ' instructions in function'
+...

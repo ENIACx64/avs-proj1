@@ -1,0 +1,165 @@
+Global optimization report for : _ZN21BatchMandelCalculatorC2Ejj
+=================================================================
+
+Global optimization report for : _ZN20BaseMandelCalculatorD2Ev
+=================================================================
+
+Global optimization report for : _ZN21BatchMandelCalculatorD2Ev
+=================================================================
+
+Global optimization report for : __clang_call_terminate
+=================================================================
+
+Global optimization report for : _ZN21BatchMandelCalculator19calculateMandelbrotEv
+
+LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (37, 5)
+
+    LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (39, 9)
+
+        LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (44, 13)
+            remark #15569: Compiler has chosen to target XMM/YMM vector. Try using -mprefer-vector-width=512 to override.
+            remark #15301: SIMD LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 8
+            remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (44, 13) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (45, 50) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (47, 25) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (47, 21) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (48, 37) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (48, 23) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (49, 32) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (49, 23) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (50, 23) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (52, 26) ] 
+            remark #15475: --- begin vector loop cost summary ---
+            remark #15476: scalar cost: 70.000000 
+            remark #15477: vector cost: 12.593750 
+            remark #15478: estimated potential speedup: 5.000000 
+            remark #15309: vectorization support: normalized vectorization overhead 0.921875
+            remark #15488: --- end vector loop cost summary ---
+            remark #15447: --- begin vector loop memory reference summary ---
+            remark #15450: unmasked unaligned unit stride loads: 3 
+            remark #15451: unmasked unaligned unit stride stores: 7 
+            remark #15474: --- end vector loop memory reference summary ---
+
+            LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (52, 22)
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (52, 33) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (54, 37) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (54, 46) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (54, 27) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (55, 42) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (55, 56) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (55, 27) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (58, 38) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (58, 48) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (58, 25) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (60, 33) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (60, 26) ] 
+                remark #15389: vectorization support: masked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (60, 21) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (60, 21) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (62, 25) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (67, 34) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (67, 27) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (68, 42) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (68, 51) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (68, 33) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (69, 30) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (69, 40) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (69, 55) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (69, 28) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (52, 44) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (52, 44) ] 
+                remark #15475: --- begin vector loop cost summary ---
+                remark #15488: --- end vector loop cost summary ---
+                remark #15447: --- begin vector loop memory reference summary ---
+                remark #15450: unmasked unaligned unit stride loads: 17 
+                remark #15456: masked unaligned unit stride loads: 1 
+                remark #15457: masked unaligned unit stride stores: 8 
+                remark #15474: --- end vector loop memory reference summary ---
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (44, 13)
+        <Remainder loop for vectorization>
+
+            LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (52, 17)
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (75, 5)
+LOOP END
+=================================================================
+
+Global optimization report for : _ZSt3minIiERKT_S2_S2_
+=================================================================
+
+Global optimization report for : __cxx_global_var_init
+=================================================================
+
+Global optimization report for : _GLOBAL__sub_I_BatchMandelCalculator.cc
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: _ZL10_mm_mallocmm
+
+DEAD STATIC FUNC: _ZL8_mm_freePv
+
+COMPILE FUNC: _ZN21BatchMandelCalculator19calculateMandelbrotEv
+   -> DELETE: llvm.directive.region.entry /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (44,13)
+   -> _ZSt3minIiERKT_S2_S2_ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (39,29)
+   -> llvm.umax.i32 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (44,13)
+   -> llvm.masked.store.v8f32.p0 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (54,27)
+   -> llvm.masked.store.v8f32.p0 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (55,27)
+   -> llvm.masked.store.v8i32.p0 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (58,25)
+   -> llvm.masked.load.v8i32.p0 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (60,29)
+   -> llvm.masked.store.v8i32.p0 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (60,29)
+   -> llvm.masked.store.v8f32.p0 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (67,27)
+   -> llvm.masked.store.v8f32.p0 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (68,33)
+   -> llvm.masked.store.v8f32.p0 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (69,28)
+   -> llvm.masked.store.v8i32.p0 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (52,44)
+   -> llvm.memcpy.p0.p0.i64 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (77,9)
+
+COMPILE FUNC: _ZN21BatchMandelCalculatorC2Ejj
+   -> INLINE: _ZL10_mm_mallocmm /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (24,20)
+      -> EXTERN: malloc /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc
+      -> EXTERN: posix_memalign /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> EXTERN: _ZNSaIcEC1Ev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (21,49)
+   -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_ /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (21,49)
+   -> EXTERN: _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (21,5)
+   -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (21,5)
+   -> EXTERN: _ZNSaIcED1Ev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (21,5)
+   -> llvm.memset.p0.i64 /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (25,5)
+   -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (21,5)
+   -> EXTERN: _ZNSaIcED1Ev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (21,5)
+   -> _ZN20BaseMandelCalculatorD2Ev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (26,1)
+
+COMPILE FUNC: _ZN21BatchMandelCalculatorD2Ev
+   -> INLINE: _ZL8_mm_freePv /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (29,5)
+      -> EXTERN: free /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> _ZN20BaseMandelCalculatorD2Ev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (31,1)
+   -> __clang_call_terminate /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (29,5)
+
+COMPILE FUNC: _ZN20BaseMandelCalculatorD2Ev
+   -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (20,7)
+
+COMPILE FUNC: __clang_call_terminate
+   -> EXTERN: __cxa_begin_catch /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> EXTERN: _ZSt9terminatev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc
+
+COMPILE FUNC: _ZSt3minIiERKT_S2_S2_
+
+COMPILE FUNC: __cxx_global_var_init
+   -> EXTERN: _ZNSt8ios_base4InitC1Ev /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc (74,25)
+   -> EXTERN: __cxa_atexit /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc
+
+COMPILE FUNC: _GLOBAL__sub_I_BatchMandelCalculator.cc
+   -> __cxx_global_var_init /home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc
+
+---- End Inlining Report ------
