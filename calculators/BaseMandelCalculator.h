@@ -1,8 +1,9 @@
 /**
  * @file BaseMandelCalculator.h 
  * @author Vojtech Mrazek (mrazek@fit.vutbr.cz)
+ * @author Marta Jaros (jarosmarta@fit.vutbr.cz)
  * @brief Abstract class for mandelbrot calculator
- * @date 2021-09-24
+ * @date 2025-10-09
  * 
  */
 
@@ -37,7 +38,7 @@ public:
     void info(std::ostream & cout, bool batchMode);
     
     int width; // width of the set
-    int height; // hegiht of the set
+    int height; // height of the set
 
 
 protected:
@@ -46,13 +47,13 @@ protected:
     bool batchMode;
 
 
-	const double x_start; // minimal real value
-	const double x_fin; // maximal real value
-	const double y_start; // minimal imag value
-	const double y_fin; // maximal imag value
-	
-    double dx; // step of real vaues
-	double dy; // step of imag values
+    const float x_start; // minimal real value
+    const float x_fin; // maximal real value
+    const float y_start; // minimal imag value
+    const float y_fin; // maximal imag value
+        
+    float dx; // step of real values
+    float dy; // step of imag values
 };
 
 #endif

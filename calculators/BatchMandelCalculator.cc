@@ -16,17 +16,17 @@
 #include "BatchMandelCalculator.h"
 
 BatchMandelCalculator::BatchMandelCalculator (unsigned matrixBaseSize, unsigned limit) :
-	BaseMandelCalculator(matrixBaseSize, limit, "BatchMandelCalculator")
+    BaseMandelCalculator(matrixBaseSize, limit, "BatchMandelCalculator")
 {
-	// @TODO allocate & prefill memory
+    // @TODO allocate & prefill memory
 }
 
 BatchMandelCalculator::~BatchMandelCalculator() {
-	// @TODO cleanup the memory
+    // @TODO cleanup the memory
 }
 
 
 int * BatchMandelCalculator::calculateMandelbrot () {
-	// @TODO implement the calculator & return array of integers
-	return NULL;
+    // @TODO implement the calculator & return array of integers
+    return NULL;
 }

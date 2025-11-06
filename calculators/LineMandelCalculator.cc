@@ -16,17 +16,17 @@
 
 
 LineMandelCalculator::LineMandelCalculator (unsigned matrixBaseSize, unsigned limit) :
-	BaseMandelCalculator(matrixBaseSize, limit, "LineMandelCalculator")
+    BaseMandelCalculator(matrixBaseSize, limit, "LineMandelCalculator")
 {
-	// @TODO allocate & prefill memory
+    // @TODO allocate & prefill memory
 }
 
 LineMandelCalculator::~LineMandelCalculator() {
-	// @TODO cleanup the memory
+    // @TODO cleanup the memory
 }
 
 
 int * LineMandelCalculator::calculateMandelbrot () {
-	// @TODO implement the calculator & return array of integers
-	return NULL;
+    // @TODO implement the calculator & return array of integers
+    return NULL;
 }
