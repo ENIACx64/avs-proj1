@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc"
+           line_no="34"
+           routine="BatchMandelCalculator::calculateMandelbrot"
+           is_vectorized="1"
+           self_time="4.159987E+00"
+           total_time="4.159987E+00"
+           trip_counts="21"
+           func_instance="10"
+           priority="0"/>
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc"
+           line_no="34"
+           routine="BatchMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="9.993567E-03"
+           total_time="4.169981E+00"
+           trip_counts="1536"
+           func_instance="12"
+           priority="0"/>
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc"
+           line_no="34"
+           routine="BatchMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="4.209977E+00"
+           trip_counts="128; 4096"
+           func_instance="17"
+           priority="0"/>
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/BatchMandelCalculator.cc"
+           line_no="34"
+           routine="BatchMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="4.169981E+00"
+           trip_counts="32"
+           func_instance="13"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

@@ -1,3 +1,0 @@
-/home/xvodak06/avs-proj1/build_evaluate/CMakeFiles/mandelbrot.dir
-/home/xvodak06/avs-proj1/build_evaluate/CMakeFiles/edit_cache.dir
-/home/xvodak06/avs-proj1/build_evaluate/CMakeFiles/rebuild_cache.dir

@@ -4,6 +4,7 @@
 Pokud ne, stručně popište proč a co vektorizaci brání.
 Pokud ano, jaká je efektivita vektorizace? (0.5b)
 =============================================================================
+Smyčka nebyla vektorizována, protože není předem znám počet iterací smyčky (return v kódu). Navíc jsou iterace na sobě závislé.
 
 
 2. Kolika GFLOPS a GINTOPS dosahuje smyčka ve funkci mandelbrot u ref verze kódu při 
@@ -78,14 +79,16 @@ Dokázali byste ji přibližně spočítat i ručně a jak? (1b)
 -  batch AI: XX.X FLOP/Byte
 
 Přibližný výpočet:
+Aritmetická intenzita lze spočítat ručně jako podíl počtu vykonaných operací a množství přenesených dat.
 
 
 8. Komentujte vliv velikosti cache na výkonnost a chování na větších 
 velikostech domény. (1b)
 ==============================================================================
+Při větších velikostech domény se data již nevejdou do cache, proto dochází k přístupům do pomalejší paměti a výkonnost klesá.
 
 
 9. Jaký vliv na výkonnost má symetrie? Lze tento rozdíl pozorovat v Intel Advisor? 
 (nápověda: instrukce) (0.5b)
 ============================================================================== 
-
+Symetrie má velký pozitivní vliv na výkonnost. Počet vykonaných instrukcí je poloviční.

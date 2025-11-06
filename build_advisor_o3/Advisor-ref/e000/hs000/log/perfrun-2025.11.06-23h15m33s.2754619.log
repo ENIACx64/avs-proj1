@@ -1,0 +1,36 @@
+10 [22419877782272] INFO perfrun.launcher <> - Launcher main begin
+12 [22419877782272] INFO perfrun.launcher <> - MessageCatalogInit finished
+12 [22419877782272] INFO perfrun.launcher <> - Launcher instance created
+12 [22419877782272] INFO perfrun.launcher <> - argc = 6; cmdline = /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/bin64/advixe-runss -dump-vdso -r /tmp/advixe-tmp-xvodak06/advixe-res-2754612-11482661352051776 --tmp-dir /tmp/advixe-tmp-xvodak06 
+58 [22419877782272] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+58 [22419877782272] INFO perfrun.launcher <> - create file finder object
+61 [22419747337984] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+61 [22419747337984] INFO perfrun.launcher <> - plugin [system] was disabled because it doesn't support the given collection type.
+61 [22419747337984] INFO perfrun.vdso <> - dumping [vdso] pseudomodule
+62 [22419747337984] INFO perfrun.launcher <> - plugin [itt] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [mrte] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [tpss] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419747337984] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+62 [22419877782272] INFO perfrun.launcher <> - Application exit code: 0
+62 [22419877782272] INFO perfrun.launcher <> - Exit code: 0

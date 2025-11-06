@@ -1,0 +1,165 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	     24096	    0	      0	                                  _start	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	24096	47	0	6	0	0	0	0	0	0	0	0
+         2	        -1	     24141	    0	      0	                                  _start	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	24096	47	0	6	0	0	0	0	0	0	0	0
+         3	        83	    144530	    1	      1	     [Loop@0x23404 in __libc_start_main]	/lib64/libc.so.6	144388,144632	230,102	0	1	0	0	0	0	0	0	0	0
+         4	         3	    243988	    0	      0	                                    main	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	236592	9092	0	7	0	0	0	0	0	0	0	0
+         5	         4	    253505	    0	      0	evaluateCalculator<LineMandelCalculator>	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	253456	1080	0	8	0	0	0	0	0	0	0	0
+         6	         5	     28938	    0	      0	LineMandelCalculator::LineMandelCalculator	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	28624	380	0	9	0	0	0	0	0	0	0	0
+         7	         6	   1444433	    0	      1	                      __memset_avx2_erms	/lib64/libc.so.6	1444416	23	0	3	0	0	0	0	0	0	0	0
+         8	         4	    253552	    0	      0	evaluateCalculator<LineMandelCalculator>	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	253456	1080	0	8	0	0	0	0	0	0	0	0
+         9	        88	     30820	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        10	        87	     30977	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29630	1471	31101	12	0	0	0	0	0	0	0	0
+        11	        88	     30418	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        12	        88	     30845	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        13	        88	     30293	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        14	        88	     30931	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        15	        88	     30891	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        16	        88	     30779	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        17	        88	     30526	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        18	        88	     30793	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        19	        88	     30350	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        20	        88	     30255	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        21	        88	     30285	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        22	        88	     30912	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        23	        88	     30104	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        24	        88	     30241	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        25	        88	     30046	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        26	        88	     29899	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        27	        88	     29935	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        28	        88	     30228	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        29	        88	     30808	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        30	        88	     30268	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        31	        88	     30402	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        32	        88	     29965	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        33	        88	     30718	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        34	        88	     30473	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        35	        88	     30701	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        36	        88	     30599	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        37	        88	     30118	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        38	        88	     30860	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        39	        88	     29926	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        40	        88	     30298	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        41	        88	     30323	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        42	        88	     30826	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        43	        88	     30126	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        44	        87	     29842	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29630	1471	31101	12	0	0	0	0	0	0	0	0
+        45	        88	     30198	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        46	        88	     30666	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        47	        88	     29985	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        48	        88	     30639	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        49	        88	     30950	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        50	        88	     30621	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        51	        88	     30091	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        52	        88	     30010	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        53	        88	     30169	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        54	        88	     30885	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        55	        88	     30590	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        56	        88	     30449	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        57	        88	     30237	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        58	        88	     29961	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        59	        88	     30383	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        60	        88	     30155	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        61	        88	     30569	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        62	        88	     30028	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        63	        88	     30830	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        64	        88	     30543	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        65	        88	     30916	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        66	        88	     30495	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        67	        88	     30761	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        68	        88	     30186	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        69	        88	     30482	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        70	        88	     30073	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        71	        88	     30922	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        72	        88	     30920	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        73	        88	     30374	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        74	        88	     29977	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        75	        88	     29890	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	1066	30956	10	0	0	0	0	0	0	0	0
+        76	        87	     29795	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29630	1471	31101	12	0	0	0	0	0	0	0	0
+        77	        87	     29815	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29630	1471	31101	12	0	0	0	0	0	0	0	0
+        78	       159	     31889	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	31767	145	31912	14	0	0	0	0	0	0	0	0
+        79	        78	   1443395	    0	      1	            __memmove_avx_unaligned_erms	/lib64/libc.so.6	1443312	984	0	4	0	0	0	0	0	0	0	0
+        80	         4	    254508	    0	      0	evaluateCalculator<LineMandelCalculator>	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	253456	1080	0	8	0	0	0	0	0	0	0	0
+        81	        80	     29044	    0	      0	LineMandelCalculator::~LineMandelCalculator	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29008	60	0	15	0	0	0	0	0	0	0	0
+        82	        81	   1013675	    0	      1	                                  munmap	/lib64/libc.so.6	1013664	37	0	5	0	0	0	0	0	0	0	0
+        83	         2	    144388	    0	      1	                       __libc_start_main	/lib64/libc.so.6	144288	446	0	2	0	0	0	0	0	0	0	0
+        84	         2	    144530	    0	      1	                       __libc_start_main	/lib64/libc.so.6	144288	446	0	2	0	0	0	0	0	0	0	0
+        85	         8	     29202	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        86	        85	     29630	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29202,31767	2554,145	31756,31912	16	0	0	0	0	0	0	0	0
+        87	        86	     29630	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29202	2554	31756	13	0	0	0	0	0	0	0	0
+        88	        87	     29890	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29630	1471	31101	12	0	0	0	0	0	0	0	0
+        89	         8	     30820	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        90	         8	     30977	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        91	         8	     30418	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        92	         8	     30845	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        93	         8	     30293	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        94	         8	     30931	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        95	         8	     30891	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        96	         8	     30779	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        97	         8	     30526	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        98	         8	     30793	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+        99	         8	     30350	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       100	         8	     30255	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       101	         8	     30285	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       102	         8	     30912	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       103	         8	     30104	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       104	         8	     30241	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       105	         8	     30046	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       106	         8	     29899	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       107	         8	     29935	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       108	         8	     30228	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       109	         8	     30808	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       110	         8	     30268	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       111	         8	     30402	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       112	         8	     29965	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       113	         8	     30718	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       114	         8	     30473	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       115	         8	     30701	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       116	         8	     30599	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       117	         8	     30118	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       118	         8	     30860	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       119	         8	     29926	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       120	         8	     30298	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       121	         8	     30323	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       122	         8	     30826	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       123	         8	     30126	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       124	         8	     29842	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       125	         8	     30198	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       126	         8	     30666	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       127	         8	     29985	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       128	         8	     30639	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       129	         8	     30950	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       130	         8	     30621	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       131	         8	     30091	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       132	         8	     30010	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       133	         8	     30169	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       134	         8	     30885	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       135	         8	     30590	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       136	         8	     30449	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       137	         8	     30237	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       138	         8	     29961	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       139	         8	     30383	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       140	         8	     30155	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       141	         8	     30569	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       142	         8	     30028	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       143	         8	     30830	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       144	         8	     30543	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       145	         8	     30916	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       146	         8	     30495	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       147	         8	     30761	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       148	         8	     30186	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       149	         8	     30482	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       150	         8	     30073	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       151	         8	     30922	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       152	         8	     30920	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       153	         8	     30374	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       154	         8	     29977	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       155	         8	     29890	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       156	         8	     29795	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       157	         8	     29815	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       158	         8	     31767	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       159	       158	     31889	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29202,31767	2554,145	31756,31912	16	0	0	0	0	0	0	0	0
+       160	         8	     31889	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29072	2860	0	11	0	0	0	0	0	0	0	0
+       161	       159	     31889	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	31767	145	31912	14	0	0	0	0	0	0	0	0
+       162	       159	     29630	    1	      0	[Loop at line 0 in LineMandelCalculator::calculateMandelbrot]	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29202	2554	31756	13	0	0	0	0	0	0	0	0
+       163	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	18	0	0	0	0	0	0	0	0
