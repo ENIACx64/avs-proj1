@@ -4,7 +4,7 @@
 
 <IntelParallelAdvisorSummary version="" 
                              kind="DATAKIND_SURVEY_EX" >
-  <hotspot filename="\home\xvodak06\avs-proj1\calculators\LineMandelCalculator.cc"
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc"
            line_no="34"
            routine="LineMandelCalculator::calculateMandelbrot"
            is_vectorized="1"
@@ -15,7 +15,7 @@
            priority="0">
            <recommendation id="rec_type_conversions_smallest_c" title="Use the smallest data type" confidence="1" gain="-1"/>
   </hotspot>
-  <hotspot filename="\home\xvodak06\avs-proj1\calculators\LineMandelCalculator.cc"
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc"
            line_no="34"
            routine="LineMandelCalculator::calculateMandelbrot"
            is_vectorized="0"
@@ -26,7 +26,7 @@
            priority="0">
            <recommendation id="rec_system_functions_move_c" title="Remove system function call(s) inside loop" confidence="1" gain="-1"/>
   </hotspot>
-  <hotspot filename="\home\xvodak06\avs-proj1\calculators\LineMandelCalculator.cc"
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc"
            line_no="34"
            routine="LineMandelCalculator::calculateMandelbrot"
            is_vectorized="0"

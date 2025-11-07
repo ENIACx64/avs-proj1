@@ -4,7 +4,7 @@
 
 <IntelParallelAdvisorSummary version="" 
                              kind="DATAKIND_SURVEY_EX" >
-  <hotspot filename="\home\xvodak06\avs-proj1\calculators\LineMandelCalculator.cc"
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc"
            line_no="34"
            routine="LineMandelCalculator::calculateMandelbrot"
            is_vectorized="2"
@@ -13,7 +13,7 @@
            trip_counts="21"
            func_instance="10"
            priority="0"/>
-  <hotspot filename="\home\xvodak06\avs-proj1\calculators\LineMandelCalculator.cc"
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc"
            line_no="34"
            routine="LineMandelCalculator::calculateMandelbrot"
            is_vectorized="1"
@@ -22,7 +22,7 @@
            trip_counts="1536"
            func_instance="12"
            priority="0"/>
-  <hotspot filename="\home\xvodak06\avs-proj1\calculators\LineMandelCalculator.cc"
+  <hotspot filename="/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc"
            line_no="34"
            routine="LineMandelCalculator::calculateMandelbrot"
            is_vectorized="0"

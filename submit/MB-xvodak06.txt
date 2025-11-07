@@ -1,0 +1,31 @@
+#### Stručně ale věcně odpovězte na následující otázky: ######
+
+1. Jaká byla dosažena výkonnost v Intel Advisoru pro implementace ref, line a batch
+(v GFLOPS)? (0.5b)
+==============================================================================
+Pro implementaci ref byla dosažena výkonnost 0,774 GFLOPS, pro implementaci line 2,119 GFLOPS a pro implementaci batch 1,917 GFLOPS.
+
+
+2. Porovnejte implementaci referenčního rešení oproti "Line" a "Batch" implementaci. 
+Jakým způsobem jsou načítána data, proč, a jaký to má vliv na výkon. (1b)
+==============================================================================
+V případě line jsou data načítána po řádcích, v případě batch jsou načítána po blocích paměti. Pokud jsou data načítána po blocích, nemusí se čekat na paměť, čímž dojde ke zrychlení.
+
+
+3. Porovnejte Roofline všech modelů. Jsou implementace memory 
+bound? Jaká je vaše aritmetická intenzita? Dokázali byste ji přibližně spočítat 
+i ručně a jak? (1b)
+==============================================================================
+Implementace jsou memory bound. Aritmetická intenzita je 13 pro ref, 6 pro line a 5 pro batch. Aritmetická intenzita se dá spočítat ručně přibližně jako poměr počtu operací v jádru k počtu přístupů do paměti.
+
+
+4. Komentujte vliv velikosti cache na výkonnost a chování na větších 
+velikostech domény. (1b)
+==============================================================================
+Čím více dat, tím spíš může dojít k naplnění a překročení kapacity cache. Poté je třeba přistupovat do hlavní paměti, což má nepříznivý vliv na výkon. Proto je vhodné, aby velikost cache škálovala s velikostí domény. Pro srovnání, cache je zpravidla 10-100x rychlejší než paměť RAM, dle konkrétního typu cache.
+
+
+5. Jaký vliv na výkonnost má symetrie? Lze tento rozdíl pozorovat v Intel Advisor? 
+(nápověda: instrukce) (0.5b)
+============================================================================== 
+Symetrie má velký vliv na výkon - je třeba počítat pouze polovinu matice, tedy výkon se v podstatě zdvojnásobí. Rozdíl lze pozorovat.

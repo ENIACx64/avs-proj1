@@ -1,6 +1,6 @@
 # hash file version: 3
-1	10	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	30956	/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc	34	1066	5f6c1c4c37cd6eb764bbafbb507ef3a3	1	1	0	0	0
-2	12	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29630	31101	/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc	34	1471	5f6c1c4c37cd6eb764bbafbb507ef3a3	0	1	0	0	0
+1	10	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29890	30956	/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc	34	1066	5f6c1c4c37cd6eb764bbafbb507ef3a3	0	1	0	0	0
+2	12	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29630	31101	/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc	34	1471	5f6c1c4c37cd6eb764bbafbb507ef3a3	1	1	0	0	0
 3	13	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29202	31756	/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc	34	2554	5f6c1c4c37cd6eb764bbafbb507ef3a3	0	1	0	0	0
 4	14	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	31767	31912	/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc	34	145	5f6c1c4c37cd6eb764bbafbb507ef3a3	0	1	0	0	0
 5	16	/home/xvodak06/avs-proj1/build_advisor/mandelbrot	29202	31756,31912	/home/xvodak06/avs-proj1/calculators/LineMandelCalculator.cc	34	2699	5f6c1c4c37cd6eb764bbafbb507ef3a3	0	1	0	0	0

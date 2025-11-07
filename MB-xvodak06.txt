@@ -12,16 +12,16 @@ překladu s -O0 (žádné optimalizace) a -O3 (maximální optimalizace)?
 Byly použity FMA instrukce? Jak jste k tomu přišli? Jaká instrukční sada (IS) byla použita? (1b)
 =============================================================================
 - O0:
--- XX.X GFLOPS
--- XX.X GINTOPS
--- IS:
--- FMA: ano/ne
+-- 1.17 GFLOPS
+-- 0.29 GINTOPS
+-- IS: AVX
+-- FMA: ne
 
 - O3:
--- XX.X GFLOPS
--- XX.X GINTOPS
--- IS:
--- FMA: ano/ne
+-- 1.16 GFLOPS
+-- 0.29 GINTOPS
+-- IS: AVX
+-- FMA: ne
 
 
 3. Přeložte ref vezi kódu s přepínačem -O0 (žádné optimalizace) a -O3 (maximální optimalizace). (2b)
@@ -52,31 +52,31 @@ Slovní vyjádření (1-2 krátké věty):
 (v GFLOPS) při použití přepínačů -O0 a -O3? (1b)
 ==============================================================================
 - ref:
--- O0: XX.X GFLOPS
--- O3: XX.X GFLOPS
+-- O0: 1.17 GFLOPS
+-- O3: 1.17 GFLOPS
 
 - line:
--- O0: XX.X GFLOPS
--- O3: XX.X GFLOPS
+-- O0: 2.27 GFLOPS
+-- O3: 2.26 GFLOPS
 
 - batch:
--- O0: XX.X GFLOPS
--- O3: XX.X GFLOPS
+-- O0: 2.25 GFLOPS
+-- O3: 2.25 GFLOPS
 
 
 6. Porovnejte implementaci referenčního rešení oproti "Line" a "Batch" implementaci. 
 Jakým způsobem jsou načítána data, proč, a jaký to má vliv na výkon. (1b)
 ==============================================================================
-- line:
-- batch:
+- line: Data jsou načítána po řádcích, což umožňuje využít prostorovou lokalitu dat. Díky tomu roste aritmetická intenzita.
+- batch: Data jsou načítána po dlaždicích, což vede na znovupoužitelnost načtených dat. V tomto případě dosahovalo "batch" řešení nižšího výkonu, což může být způsobeno malou velikostí domény.
 
 
 7. Porovnejte Roofline všech modelů - Jaká je vaše aritmetická intenzita? 
 Dokázali byste ji přibližně spočítat i ručně a jak? (1b)
 ============================================================================== 
-- ref AI: XX.X FLOP/Byte
-- line AI: XX.X FLOP/Byte
--  batch AI: XX.X FLOP/Byte
+- ref AI: 0.09 FLOP/Byte
+- line AI: 0.04 FLOP/Byte
+-  batch AI: 0.04 FLOP/Byte
 
 Přibližný výpočet:
 Aritmetická intenzita lze spočítat ručně jako podíl počtu vykonaných operací a množství přenesených dat.
